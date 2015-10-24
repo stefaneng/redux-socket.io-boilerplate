@@ -9,3 +9,4 @@ partyq
 ### Dev Dependencies
   - [Babel](https://babeljs.io/) to support ES6 features such as modules
   - [Mocha](https://mochajs.org/) and [Chai](http://chaijs.com/) for unit testing.
+    - [Chai Immutable](https://github.com/astorije/chai-immutable) for using immutable with chai tests.
