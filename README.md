@@ -26,3 +26,7 @@ Redux manages the state in partyq. We want to represent our application's state 
   - [Babel](https://babeljs.io/) to support ES6 features such as modules
   - [Mocha](https://mochajs.org/) and [Chai](http://chaijs.com/) for unit testing.
     - [Chai Immutable](https://github.com/astorije/chai-immutable) for using immutable with chai tests.
+  - [Eslint](http://eslint.org/) ensures coding standards. Current settings can be found in [.eslintrc](.eslintrc).
+    - Extends the [airbnb eslint](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) configuration for ES6.
+    - [babel-eslint](https://github.com/babel/babel-eslint) to lint ES6 code.
+    - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to lint React and jsx parts.
