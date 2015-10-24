@@ -8,8 +8,8 @@ describe('immutability', () => {
     }
 
     it('is immutable', () => {
-      let state = 42;
-      let nextState = increment(state);
+      const state = 42;
+      const nextState = increment(state);
 
       expect(nextState).to.equal(43);
       // Incrementing state will not change original
@@ -23,8 +23,8 @@ describe('immutability', () => {
     }
 
     it('is immutable', () => {
-      let state = List.of('one', 'two');
-      let nextState = addElement(state, 'three');
+      const state = List.of('one', 'two');
+      const nextState = addElement(state, 'three');
 
       expect(nextState).to.equal(List.of(
         'one',
@@ -51,11 +51,11 @@ describe('immutability', () => {
     }
 
     it('is immutable', () => {
-      let state = Map({
+      const state = Map({
         elements: List.of('one', 'two')
       });
 
-      let nextState = addElement(state, 'three');
+      const nextState = addElement(state, 'three');
 
       // New tree with elements updated
       expect(nextState).to.equal(Map({

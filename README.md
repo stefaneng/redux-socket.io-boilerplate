@@ -31,3 +31,4 @@ Redux manages the state in partyq. We want to represent our application's state 
     - Extends the [airbnb eslint](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) configuration for ES6.
     - [babel-eslint](https://github.com/babel/babel-eslint) to lint ES6 code.
     - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to lint React and jsx parts.
+  - [pre-commit](https://github.com/observing/pre-commit) to run lint and test before each commit
