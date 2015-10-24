@@ -14,5 +14,15 @@ describe('application logic', () => {
         entries: List.of('item-one', 'item-two')
       }));
     });
+
+    it('converts to immutable', () => {
+      const state = Map();
+      const entries = ['item-one', 'item-two'];
+      const nextState = setEntries(state, entries);
+
+      expect(nextState).to.equal(Map({
+        entries: List.of('item-one', 'item-two')
+      }));
+    });
   });
 });
