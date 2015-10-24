@@ -7,6 +7,7 @@ partyq
   - `npm run lint` runs eslint on files
 
 ## Layout
+  - [/src](src/) contains the main source code for partyq. Redux reducer and core functionality.
   - [/test](test/) contains chai tests for partyq. Tests are written in ES6 using the babel compiler. Checkout the various test commands in [`package.json`](package.json)
     - [/test/learning](test/learning) various non-application tests. Used to experiment with a new API or get comformable with the testing framework.
 
@@ -17,6 +18,7 @@ partyq
 
 ### [Redux](http://redux.js.org/)
 Redux manages the state in partyq. We want to represent our application's state as an immutable tree data structure. We change the state by applying function to the state tree.
+  - [Reducers](src/reducer.js)
 
 ### Dependencies
   - [Immutable](https://facebook.github.io/immutable-js/) for immutable data structure to promote pure functions and functional style.
