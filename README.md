@@ -15,7 +15,7 @@ partyq
 Redux deserves its own heading for its importance. We want to represent our application's state as an immutable tree data structure. We change the state by applying function to the state tree.
 
 ### Dependencies
-  - [Immutable](https://facebook.github.io/immutable-js/) for immutable data structure to promote pure functions and functional style
+  - [Immutable](https://facebook.github.io/immutable-js/) for immutable data structure to promote pure functions and functional style. See [/tests/learning/immutable_spec.js](tests/learning/immutable_spec.js) for an example of how to use and test the immutable data structures.
 
 ### Dev Dependencies
   - [Babel](https://babeljs.io/) to support ES6 features such as modules
