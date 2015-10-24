@@ -3,6 +3,9 @@ partyq
 
 ## Packages
 
+### [Redux](http://redux.js.org/)
+Redux deserves its own heading for its importance. We want to represent our application's state as an immutable tree data structure. We change the state by applying function to the state tree.
+
 ### Dependencies
   - [Immutable](https://facebook.github.io/immutable-js/) for immutable data structure to promote pure functions and functional style
 
