@@ -1,6 +1,9 @@
 # partyq
 partyq
 
+## Layout
+  - [test](test/) contains chai tests for partyq. Tests are written in ES6 using the babel compiler. Checkout the various test commands in [`package.json`](package.json)
+
 ## Packages
 
 ### [Redux](http://redux.js.org/)
