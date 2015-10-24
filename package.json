@@ -4,7 +4,8 @@
   "description": "partyq",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register --recursive"
+    "test": "mocha --compilers js:babel/register --recursive",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
     "email": "stefaneng13@gmail.com",
     "url": "https://github.com/stefaneng"
   },
-  "contributers": [
+  "contributors": [
     "Marco Jonker <marco.jonker.931@my.csun.edu>",
     "Andrew Maynard <andrew.maynard.73@my.csun.edu>",
     "Alexandr Kolesnik <alexandr.kolesnik.51@my.csun.edu>",
@@ -33,5 +34,8 @@
     "babel": "^5.8.29",
     "chair": "0.0.0",
     "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "immutable": "^3.7.5"
   }
 }
