@@ -1,0 +1,32 @@
+{
+  "name": "partyq",
+  "version": "0.0.0",
+  "description": "partyq",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSUN-Comp490/partyq.git"
+  },
+  "keywords": [
+    "partyq"
+  ],
+  "author": {
+    "name": "Stefan Eng",
+    "email": "stefaneng13@gmail.com",
+    "url": "https://github.com/stefaneng"
+  },
+  "contributers": [
+    "Marco Jonker <marco.jonker.931@my.csun.edu>",
+    "Andrew Maynard <andrew.maynard.73@my.csun.edu>",
+    "Alexandr Kolesnik <alexandr.kolesnik.51@my.csun.edu>",
+    "Narbeh Movsesian <narbeh.movsesian.731@my.csun.edu>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSUN-Comp490/partyq/issues"
+  },
+  "homepage": "https://github.com/CSUN-Comp490/partyq#readme"
+}
