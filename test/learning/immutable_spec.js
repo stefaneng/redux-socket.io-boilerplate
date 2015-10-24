@@ -46,10 +46,8 @@ describe('immutability', () => {
   // or other collections
   describe('a tree', () => {
     function addElement(currentState, element) {
-      return currentState.set(
-        'elements',
-        currentState.get('elements').push(element)
-      );
+      return currentState.update('elements',
+                                 elements => elements.push(element));
     }
 
     it('is immutable', () => {
