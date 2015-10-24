@@ -4,7 +4,7 @@
   "description": "partyq",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel/register --recursive"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/CSUN-Comp490/partyq/issues"
   },
-  "homepage": "https://github.com/CSUN-Comp490/partyq#readme"
+  "homepage": "https://github.com/CSUN-Comp490/partyq#readme",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "chair": "0.0.0",
+    "mocha": "^2.3.3"
+  }
 }
