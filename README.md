@@ -1,8 +1,13 @@
 # partyq
 partyq
 
+## Commands
+  - `npm test` runs tests once
+  - `npm run test:watch` runs tests when files change
+
 ## Layout
   - [test](test/) contains chai tests for partyq. Tests are written in ES6 using the babel compiler. Checkout the various test commands in [`package.json`](package.json)
+    - [test/learning](test/learning) various non-application tests. Used to experiment with a new API or get comformable with the testing framework.
 
 ## Packages
 
