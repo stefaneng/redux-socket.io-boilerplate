@@ -32,13 +32,13 @@ module.exports = {
     loaders: [{
       test: /\.js?$/,
       exclude: /node_modules/,
-      loader: 'babel-loader'
+      loader: 'babel'
     }, {
       test: /\.json?$/,
-      loader: 'json-loader'
+      loader: 'json'
     }, {
       test: /\.css$/,
-      loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
     }]
   }
 };
