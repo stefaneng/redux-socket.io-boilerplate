@@ -57,3 +57,8 @@ Document
   - webpack-dev-middleware
   - webpack-dev-server
   - webpack-hot-middleware
+
+## References
+  - [Full-Stack Redux Tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
+  - [The Ultimate Webpack Setup](http://www.christianalfoni.com/articles/2015_04_19_The-ultimate-webpack-setup)
+  - [Redux Easy Boilerplate](https://github.com/anorudes/redux-easy-boilerplate)
