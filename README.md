@@ -25,6 +25,7 @@ Redux manages the state in partyq. We want to represent our application's state 
   - [Immutable](https://facebook.github.io/immutable-js/) for immutable data structure to promote pure functions and functional style.
     - See [/tests/learning/immutable_spec.js](tests/learning/immutable_spec.js) for an example of how to use and test the immutable data structures.
     - [Full API Docs](https://facebook.github.io/immutable-js/docs/#/)
+  - [Socket.io](http://socket.io/) abstracts websockets for realtime applications
 
 ### Dev Dependencies
   - [Babel](https://babeljs.io/) to support ES6 features such as modules
