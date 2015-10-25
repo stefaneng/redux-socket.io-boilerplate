@@ -7,6 +7,11 @@ partyq
   - `npm run lint` runs eslint on files
 
 ## Layout
+
+### Frontend
+  - [/app](app/) root of front end code
+
+### Backend
   - [/server](server/) contains the main backend source code for partyq. Reducer, Redux store, and core functionality.
   - [/test](test/) contains chai tests for partyq. Tests are written in ES6 using the babel compiler. Checkout the various test commands in [`package.json`](package.json)
     - [/test/learning](test/learning) various non-application tests. Used to experiment with a new API or get comformable with the testing framework.
@@ -36,3 +41,13 @@ Redux manages the state in partyq. We want to represent our application's state 
     - [babel-eslint](https://github.com/babel/babel-eslint) to lint ES6 code.
     - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to lint React and jsx parts.
   - [pre-commit](https://github.com/observing/pre-commit) to run lint and test before each commit
+
+### TODO
+Document
+  - express
+  - http-proxy
+  - rimraf
+  - webpack
+  - webpack-dev-middleware
+  - webpack-dev-server
+  - webpack-hot-middleware
