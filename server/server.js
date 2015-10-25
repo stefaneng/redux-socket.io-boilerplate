@@ -10,6 +10,7 @@ export default function startServer(store) {
   );
 
   entries.on('connection', (socket) => {
+    console.log("Connected");
     socket.emit('state', store.getState().toJS());
     // Feed action event from clients directly into store
     // Should probably put authentication here
