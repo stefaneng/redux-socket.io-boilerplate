@@ -26,19 +26,29 @@ partyq
 
 ### [React](https://facebook.github.io/react/)
 
-
 ### [Redux](http://redux.js.org/)
 Redux manages the state in partyq. We want to represent our application's state as an immutable tree data structure. We change the state by applying function to the state tree.
-  - [partyq reducer](server/reducer.js)
-  - [partyq store](server/store.js)
+  - [partyq backend reducer](server/reducer.js)
+  - [partyq backend store](server/store.js)
 
-### Dependencies
+### [Express](http://expressjs.com/)
+Framework used on backend
+
+### [Webpack](https://webpack.github.io/)
+Module bundler. See
+  - [webpack.config.js](webpack.config.js) for development config
+  - [webpack.production.config.js](webpack.production.config.js) for production config
+Based on the configurations from [webpack-express-boilerplate](https://github.com/christianalfoni/webpack-express-boilerplate).
+
+### Other Dependencies
   - [Immutable](https://facebook.github.io/immutable-js/) for immutable data structure to promote pure functions and functional style.
     - See [/tests/learning/immutable_spec.js](tests/learning/immutable_spec.js) for an example of how to use and test the immutable data structures.
     - [Full API Docs](https://facebook.github.io/immutable-js/docs/#/)
   - [Socket.io](http://socket.io/) abstracts websockets for realtime applications
 
 ### Dev Dependencies
+  - [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) with [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) allows for serving of files to a public path without building each time.
+  - [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) allows for hot reloading while running own server.
   - [Babel](https://babeljs.io/) to support ES6 features such as modules
   - [Mocha](https://mochajs.org/) and [Chai](http://chaijs.com/) for unit testing.
     - [Chai Immutable](https://github.com/astorije/chai-immutable) for using immutable with chai tests.
@@ -47,16 +57,7 @@ Redux manages the state in partyq. We want to represent our application's state 
     - [babel-eslint](https://github.com/babel/babel-eslint) to lint ES6 code.
     - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to lint React and jsx parts.
   - [pre-commit](https://github.com/observing/pre-commit) to run lint and test before each commit
-
-### TODO
-Document
-  - express
-  - http-proxy
-  - rimraf
-  - webpack
-  - webpack-dev-middleware
-  - webpack-dev-server
-  - webpack-hot-middleware
+  - [rimraf](https://github.com/isaacs/rimraf) to clear the `dist` folder before starting partyq or building partyq.
 
 ## References
   - [Full-Stack Redux Tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
