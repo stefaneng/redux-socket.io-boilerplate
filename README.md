@@ -2,19 +2,25 @@
 partyq
 
 ## Commands
-  - `npm test` runs tests once
-  - `npm run test:watch` runs tests when files change
+  - `npm start` runs the development server with [hot-loading](https://github.com/gaearon/react-hot-loader).
+  - `npm test` runs both server side and client side tests
   - `npm run lint` runs eslint on files
+  - `npm run build` builds partyq for production
+  - `npm run test:server` runs server side tests
+  - `npm run test:client` runs client side tests
+  - `npm run test:watch` runs tests when files change
 
 ## Layout
+  - [/test](test/) General tests that do not fit in front or backend.
+    - [/test/learning](test/learning) various non-application tests. Used to experiment with a new API or get comformable with the testing framework.
 
 ### Frontend
   - [/app](app/) root of front end code
+  - [/app/test](app/test) front end tests
 
 ### Backend
   - [/server](server/) contains the main backend source code for partyq. Reducer, Redux store, and core functionality.
-  - [/test](test/) contains chai tests for partyq. Tests are written in ES6 using the babel compiler. Checkout the various test commands in [`package.json`](package.json)
-    - [/test/learning](test/learning) various non-application tests. Used to experiment with a new API or get comformable with the testing framework.
+  - [/server/test](server/test/) contains chai tests for the partyq backend.
 
 ## Packages
 
