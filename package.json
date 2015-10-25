@@ -48,6 +48,7 @@
     "pre-commit": "^1.1.2"
   },
   "dependencies": {
-    "immutable": "^3.7.5"
+    "immutable": "^3.7.5",
+    "redux": "^3.0.4"
   }
 }
