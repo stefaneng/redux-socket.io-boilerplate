@@ -1,7 +1,7 @@
 import { Map, fromJS } from 'immutable';
 import { expect } from 'chai';
 
-import reducer from '../src/reducer';
+import reducer from '../server/reducer';
 
 describe('reducer', () => {
   it('has an initial state', () => {
