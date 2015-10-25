@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "rimraf dist && babel-node index.js",
-    "test": "mocha --compilers js:babel/register --require ./test/test_helper.js --recursive",
+    "test:server": "mocha --compilers js:babel/register --require ./test/test_helper.js --recursive 'server/test/*.@(js|jsx)'",
+    "test:client": "mocha --compilers js:babel/register --require ./test/test_helper.js --recursive 'app/test/*.@(js|jsx)'",
+    "test": "mocha --compilers js:babel/register --require ./test/test_helper.js --recursive 'app/test/*.@(js|jsx)' 'server/test/*.@(js|jsx)'",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src && eslint app",
     "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors"
