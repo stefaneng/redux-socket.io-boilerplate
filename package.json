@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "rimraf dist && babel-node index.js",
-    "test:server": "mocha --compilers js:babel/register --require ./test/test_helper.js --recursive 'server/test/**/*.@(js|jsx)'",
-    "test:client": "mocha --compilers js:babel/register --require ./test/test_helper.js --recursive 'app/test/**/*.@(js|jsx)'",
-    "test": "mocha --compilers js:babel/register --require ./test/test_helper.js --recursive 'test/**/*.@(js|jsx)' 'app/test/**/*.@(js|jsx)' 'server/test/**/*.@(js|jsx)'",
+    "test:server": "mocha --compilers js:babel/register --require ./server/test/test_helper.js --recursive 'server/test/**/*.@(js|jsx)'",
+    "test:client": "mocha --compilers js:babel-core/register --require ./app/test/test_helper.js --recursive 'app/test/**/*.@(js|jsx)'",
+    "test": "npm run test:server && npm run test:client",
+    "test:server-watch": "npm run test:server -- --watch",
+    "test:client-watch": "npm run test:client -- --watch",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src && eslint app",
     "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors"
@@ -51,6 +53,7 @@
     "eslint-config-airbnb": "^0.1.0",
     "eslint-plugin-react": "^3.6.3",
     "html-webpack-plugin": "^1.6.2",
+    "jsdom": "^7.0.2",
     "mocha": "^2.3.3",
     "pre-commit": "^1.1.2",
     "rimraf": "^2.4.3",

@@ -8,6 +8,8 @@ partyq
   - `npm run build` builds partyq for production
   - `npm run test:server` runs server side tests
   - `npm run test:client` runs client side tests
+  - `npm run test:server-watch` runs server tests when files change
+  - `npm run test:client-watch` runs client tests when files change
   - `npm run test:watch` runs tests when files change
 
 ## Layout
@@ -47,6 +49,7 @@ Based on the configurations from [webpack-express-boilerplate](https://github.co
   - [Socket.io](http://socket.io/) abstracts websockets for realtime applications
 
 ### Dev Dependencies
+  - [jsdom](https://github.com/tmpvar/jsdom) implements the DOM in node, so we don't need to use karma for tests.
   - [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) with [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) allows for serving of files to a public path without building each time.
   - [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) allows for hot reloading while running own server.
   - [Babel](https://babeljs.io/) to support ES6 features such as modules
