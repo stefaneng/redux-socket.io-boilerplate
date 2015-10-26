@@ -1,6 +1,13 @@
 # partyq
 partyq
 
+## Build Status
+### Master
+[![Build Status](https://travis-ci.org/CSUN-Comp490/partyq.svg?branch=master)](https://travis-ci.org/CSUN-Comp490/partyq)
+
+### Dev
+[![Build Status](https://travis-ci.org/CSUN-Comp490/partyq.svg?branch=dev)](https://travis-ci.org/CSUN-Comp490/partyq)
+
 ## Commands
   - `npm start` runs the development server with [hot-loading](https://github.com/gaearon/react-hot-loader).
   - `npm test` runs both server side and client side tests
