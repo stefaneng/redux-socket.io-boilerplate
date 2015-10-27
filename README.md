@@ -36,9 +36,10 @@ partyq
 ### [React](https://facebook.github.io/react/)
 
 ### [Redux](http://redux.js.org/)
-Redux manages the state in partyq. We want to represent our application's state as an immutable tree data structure. We change the state by applying function to the state tree.
-  - [partyq backend reducer](server/reducer.js)
-  - [partyq backend store](server/store.js)
+Redux manages the state in partyq. We want to represent our application's state as an immutable tree data structure. We change the state by applying function to the state tree. Also uses [react-redux](https://github.com/rackt/react-redux) to play nicely with react.
+  - [backend reducer](server/reducer.js)
+  - [backend store](server/store.js)
+  - [frontend reducer](app/reducer.js)
 
 ### [Express](http://expressjs.com/)
 Framework used on backend
@@ -68,6 +69,11 @@ Based on the configurations from [webpack-express-boilerplate](https://github.co
     - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to lint React and jsx parts.
   - [pre-commit](https://github.com/observing/pre-commit) to run lint and test before each commit
   - [rimraf](https://github.com/isaacs/rimraf) to clear the `dist` folder before starting partyq or building partyq.
+  - [postcss-loader](https://github.com/postcss/postcss-loader)
+  - [autoprefixer](https://github.com/postcss/autoprefixer) "Autoprefixer will use the data based on current browser popularity and property support to apply prefixes for you."
+  - [stats-webpack-plugin](https://github.com/unindented/stats-webpack-plugin) get the stats of the webpack build.
+  - [extract-text-webpack-plugin](https://github.com/webpack/extract-text-webpack-plugin) extract text from bundle into a file.
+
 
 ## References
   - [Full-Stack Redux Tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
