@@ -15,7 +15,9 @@ const isDeveloping = process.env.NODE_ENV !== 'production';
 const port = isDeveloping ? 3000 : process.env.PORT;
 const app = express();
 
-app.use(express.static(__dirname + '/dist'));
+if (!isDeveloping) {
+  app.use(express.static(__dirname + '/dist'));
+}
 
 if (isDeveloping) {
   const compiler = webpack(config);
