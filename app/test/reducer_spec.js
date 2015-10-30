@@ -19,4 +19,17 @@ describe('reducer', () => {
       items: List.of('item-one', 'item-two')
     }));
   });
+  it('handles ADD_ITEM in empty state', () => {
+    const initialState = Map();
+    const action = {
+      type: 'ADD_ITEM',
+      item: 'new-item'
+    };
+
+    const nextState = reducer(initialState, action);
+
+    expect(nextState).to.equal(fromJS({
+      items: List.of('new-item')
+    }));
+  });
 });
