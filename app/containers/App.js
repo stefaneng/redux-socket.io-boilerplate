@@ -8,7 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-          partyq
+          redux-socket.io-boilerplate
       </div>
     );
   }

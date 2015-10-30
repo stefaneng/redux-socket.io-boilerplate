@@ -1,7 +1,7 @@
 {
-  "name": "partyq",
+  "name": "redux-socket.io-boilerplate",
   "version": "0.0.0",
-  "description": "partyq",
+  "description": "redux-socket.io-boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
@@ -14,10 +14,6 @@
     "lint": "eslint src && eslint app",
     "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors"
   },
-  "pre-commit": [
-    "lint",
-    "test"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CSUN-Comp490/partyq.git"
@@ -30,17 +26,11 @@
     "email": "stefaneng13@gmail.com",
     "url": "https://github.com/stefaneng"
   },
-  "contributors": [
-    "Marco Jonker <marco.jonker.931@my.csun.edu>",
-    "Andrew Maynard <andrew.maynard.73@my.csun.edu>",
-    "Alexandr Kolesnik <alexandr.kolesnik.51@my.csun.edu>",
-    "Narbeh Movsesian <narbeh.movsesian.731@my.csun.edu>"
-  ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CSUN-Comp490/partyq/issues"
+    "url": "https://github.com/CSUN-Comp490/redux-socket.io-boilerplate/issues"
   },
-  "homepage": "https://github.com/CSUN-Comp490/partyq#readme",
+  "homepage": "https://github.com/CSUN-Comp490/redux-socket.io-boilerplate#readme",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel": "^5.8.29",
@@ -59,7 +49,6 @@
     "mocha": "^2.3.3",
     "postcss": "^5.0.10",
     "postcss-loader": "^0.7.0",
-    "pre-commit": "^1.1.2",
     "rimraf": "^2.4.3",
     "stats-webpack-plugin": "^0.2.2",
     "style-loader": "^0.13.0",

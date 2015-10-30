@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.js';
+import App from './containers/App.js';
 import io from 'socket.io-client';
 import reducer from './reducer';
 import {createStore} from 'redux';
