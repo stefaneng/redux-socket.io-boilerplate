@@ -2,11 +2,7 @@
 partyq
 
 ## Build Status
-### Master
-[![Build Status](https://travis-ci.org/CSUN-Comp490/partyq.svg?branch=master)](https://travis-ci.org/CSUN-Comp490/partyq)
-
-### Dev
-[![Build Status](https://travis-ci.org/CSUN-Comp490/partyq.svg?branch=dev)](https://travis-ci.org/CSUN-Comp490/partyq)
+[![Build Status](https://travis-ci.org/stefaneng/redux-socket.io-boilerplate.svg)](https://travis-ci.org/stefaneng/redux-socket.io-boilerplate)
 
 ## Commands
   - `npm start` runs the development server with [hot-loading](https://github.com/gaearon/react-hot-loader).
