@@ -1,27 +1,27 @@
 import { List, Map} from 'immutable';
 import { expect } from 'chai';
 
-import { setEntries } from '../core';
+import { setItems } from '../core';
 
 describe('application logic', () => {
-  describe('setEntries', () => {
-    it('adds the entries to the state', () => {
+  describe('setItems', () => {
+    it('adds the items to the state', () => {
       const state = Map();
-      const entries = List.of('item-one', 'item-two');
-      const nextState = setEntries(state, entries);
+      const items = List.of('item-one', 'item-two');
+      const nextState = setItems(state, items);
 
       expect(nextState).to.equal(Map({
-        entries: List.of('item-one', 'item-two')
+        items: List.of('item-one', 'item-two')
       }));
     });
 
     it('converts to immutable', () => {
       const state = Map();
-      const entries = ['item-one', 'item-two'];
-      const nextState = setEntries(state, entries);
+      const items = ['item-one', 'item-two'];
+      const nextState = setItems(state, items);
 
       expect(nextState).to.equal(Map({
-        entries: List.of('item-one', 'item-two')
+        items: List.of('item-one', 'item-two')
       }));
     });
   });

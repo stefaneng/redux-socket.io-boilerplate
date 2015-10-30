@@ -5,21 +5,21 @@ import reducer from '../reducer';
 
 describe('reducer', () => {
   it('has an initial state', () => {
-    const action = {type: 'SET_ENTRIES', entries: ['item-one']};
+    const action = {type: 'SET_ITEMS', items: ['item-one']};
     const nextState = reducer(undefined, action);
 
     expect(nextState).to.equal(fromJS({
-      entries: ['item-one']
+      items: ['item-one']
     }));
   });
 
-  it('handles SET_ENTRIES', () => {
+  it('handles SET_ITEMS', () => {
     const initialState = Map();
-    const action = {type: 'SET_ENTRIES', entries: ['item-one']};
+    const action = {type: 'SET_ITEMS', items: ['item-one']};
     const nextState = reducer(initialState, action);
 
     expect(nextState).to.equal(fromJS({
-      entries: ['item-one']
+      items: ['item-one']
     }));
   });
 });

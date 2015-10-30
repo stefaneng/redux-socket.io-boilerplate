@@ -10,12 +10,12 @@ describe('store', () => {
     expect(store.getState()).to.equal(Map());
 
     store.dispatch({
-      type: 'SET_ENTRIES',
-      entries: ['item-one', 'item-two']
+      type: 'SET_ITEMS',
+      items: ['item-one', 'item-two']
     });
 
     expect(store.getState()).to.equal(fromJS({
-      entries: ['item-one', 'item-two']
+      items: ['item-one', 'item-two']
     }));
   });
 });

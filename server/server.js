@@ -3,13 +3,13 @@ import Server from 'socket.io';
 export default function startServer(store) {
   const io = new Server().attach(8090);
 
-  const entries = io.of('/entries');
+  const items = io.of('/items');
   // Emit 'state' to socket.io when Store changes
   store.subscribe(
-    () => entries.emit('state', store.getState().toJS())
+    () => items.emit('state', store.getState().toJS())
   );
 
-  entries.on('connection', (socket) => {
+  items.on('connection', (socket) => {
     console.log("Connected");
     socket.emit('state', store.getState().toJS());
     // Feed action event from clients directly into store
