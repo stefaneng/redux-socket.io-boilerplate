@@ -1,5 +1,4 @@
-# partyq
-partyq
+# Redux Socket.io Boilerplate
 
 ## Build Status
 [![Build Status](https://travis-ci.org/stefaneng/redux-socket.io-boilerplate.svg)](https://travis-ci.org/stefaneng/redux-socket.io-boilerplate)
