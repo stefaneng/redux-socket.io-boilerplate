@@ -4,10 +4,6 @@ function setState(state, newState) {
   return state.merge(newState);
 }
 
-function addItem(e, item) {
-  return state.items.push(item);
-}
-
 export default function(state = Map({items: List()}), action) {
   switch (action.type) {
   case 'SET_STATE':
