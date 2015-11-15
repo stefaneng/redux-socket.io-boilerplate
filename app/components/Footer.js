@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import { Component, PropTypes } from 'react'
 
 export default class Footer extends Component {
   renderFilter(filter, name) {

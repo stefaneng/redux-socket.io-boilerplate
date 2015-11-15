@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import { Component, PropTypes } from 'react'
 
 export default class Todo extends Component {
   render() {
