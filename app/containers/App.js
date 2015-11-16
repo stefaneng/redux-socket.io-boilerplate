@@ -1,4 +1,4 @@
-import { Component, PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { addTodo, completeTodo, setVisibilityFilter, VisibilityFilters } from '../../redux/actions'
 import AddTodo from '../components/AddTodo'

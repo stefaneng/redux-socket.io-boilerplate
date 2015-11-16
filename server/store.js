@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
-import reducer from './reducer';
+import todoApp from './reducer';
 
 export default function makeStore() {
-  return createStore(reducer);
+  return createStore(todoApp);
 }
