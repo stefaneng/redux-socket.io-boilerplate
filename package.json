@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "test:server": "mocha --compilers js:babel/register --require ./server/test/test_helper.js --recursive 'server/test/**/*.@(js|jsx)'",
+    "test:server": "mocha --compilers js:babel/register --recursive 'server/test/**/*.@(js|jsx)'",
     "test:client": "mocha --compilers js:babel-core/register --require ./app/test/test_helper.js --recursive 'app/test/**/*.@(js|jsx)'",
     "test": "npm run test:server && npm run test:client",
     "test:server-watch": "npm run test:server -- --watch",
