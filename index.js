@@ -13,6 +13,7 @@ startServer(store);
 
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const port = isDeveloping ? 3000 : process.env.PORT;
+const host = process.env.HOSTNAME ?  process.env.HOSTNAME : '0.0.0.0';
 const app = express();
 
 if (!isDeveloping) {
@@ -42,9 +43,9 @@ app.get('*', function response(req, res) {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
-app.listen(port, 'localhost', function onStart(err) {
+app.listen(port, host, function onStart(err) {
   if (err) {
     console.log(err);
   }
-  console.info('==> 🌎 Listening on port %s. Open up http://localhost:%s/ in your browser.', port, port);
+  console.info('==> 🌎 Listening on port %s. Open up %s:%s in your browser.', port, host, port);
 });
