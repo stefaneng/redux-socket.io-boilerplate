@@ -11,8 +11,9 @@ services:
 before_install:
   - docker build -t stefaneng/cibuild .
   - docker ps -a
-  - docker run -d -p 127.0.0.1:80:3000 stefaneng/cibuild /bin/sh -c 'npm start
-install: true'
+  - docker run -d -p 127.0.0.1:80:3000 stefaneng/cibuild /bin/sh -c 'npm start'
+
+install: true
 
 script:
   - docker run stefaneng/cibuild /bin/sh -c 'npm run lint'
