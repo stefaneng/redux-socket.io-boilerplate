@@ -1,7 +1,8 @@
 # Redux Socket.io Boilerplate
 
-## Build Status
 [![Build Status](https://travis-ci.org/stefaneng/redux-socket.io-boilerplate.svg)](https://travis-ci.org/stefaneng/redux-socket.io-boilerplate)
+
+[![Dependency Status](https://gemnasium.com/stefaneng/redux-socket.io-boilerplate.svg)](https://gemnasium.com/stefaneng/redux-socket.io-boilerplate)
 
 ## Commands
   - `npm start` runs the development server with [hot-loading](https://github.com/gaearon/react-hot-loader).
