@@ -4,14 +4,14 @@
   "description": "redux-socket.io-boilerplate",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
+    "start": "babel-node ./src/index.js",
     "test:server": "mocha --compilers js:babel/register --recursive 'server/test/**/*.@(js|jsx)'",
     "test:client": "mocha --compilers js:babel-core/register --require ./app/test/test_helper.js --recursive 'app/test/**/*.@(js|jsx)'",
     "test": "npm run test:server && npm run test:client",
     "test:server-watch": "npm run test:server -- --watch",
     "test:client-watch": "npm run test:client -- --watch",
     "test:watch": "npm run test -- --watch",
-    "lint": "eslint src && eslint app",
+    "lint": "eslint src",
     "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors"
   },
   "repository": {
@@ -39,6 +39,7 @@
     "babel-loader": "^5.3.2",
     "chai": "^3.4.0",
     "css-loader": "^0.21.0",
+    "debug": "^2.2.0",
     "eslint": "^1.7.3",
     "eslint-config-rackt": "^1.1.1",
     "eslint-plugin-react": "^3.6.3",
@@ -46,6 +47,7 @@
     "html-webpack-plugin": "^1.6.2",
     "jsdom": "^7.0.2",
     "mocha": "^2.3.3",
+    "morgan": "^1.6.1",
     "postcss": "^5.0.10",
     "postcss-loader": "^0.7.0",
     "rimraf": "^2.4.3",
