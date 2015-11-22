@@ -7,7 +7,7 @@
   - `npm start` runs the development server with [hot-loading](https://github.com/gaearon/react-hot-loader).
   - `npm test` runs both server side and client side tests
   - `npm run lint` runs eslint on files
-  - `npm run build` builds partyq for production
+  - `npm run build` builds code for production
   - `npm run test:server` runs server side tests
   - `npm run test:client` runs client side tests
   - `npm run test:server-watch` runs server tests when files change
@@ -23,15 +23,15 @@
   - [/app/test](app/test) front end tests
 
 ### Backend
-  - [/server](server/) contains the main backend source code for partyq. Reducer, Redux store, and core functionality.
-  - [/server/test](server/test/) contains chai tests for the partyq backend.
+  - [/server](server/) contains the main backend source code. Reducer, Redux store, and core functionality.
+  - [/server/test](server/test/) contains chai tests for backend.
 
 ## Packages
 
 ### [React](https://facebook.github.io/react/)
 
 ### [Redux](http://redux.js.org/)
-Redux manages the state in partyq. We want to represent our application's state as an immutable tree data structure. We change the state by applying function to the state tree. Also uses [react-redux](https://github.com/rackt/react-redux) to play nicely with react.
+Redux manages the state in the frontend and backend. We want to represent our application's state as an immutable tree data structure. We change the state by applying function to the state tree. Also uses [react-redux](https://github.com/rackt/react-redux) to play nicely with react.
   - [backend reducer](server/reducer.js)
   - [backend store](server/store.js)
   - [frontend reducer](app/reducer.js)
@@ -63,7 +63,7 @@ Based on the configurations from [webpack-express-boilerplate](https://github.co
     - [babel-eslint](https://github.com/babel/babel-eslint) to lint ES6 code.
     - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to lint React and jsx parts.
   - [pre-commit](https://github.com/observing/pre-commit) to run lint and test before each commit
-  - [rimraf](https://github.com/isaacs/rimraf) to clear the `dist` folder before starting partyq or building partyq.
+  - [rimraf](https://github.com/isaacs/rimraf) to clear the `dist` folder before starting.
   - [postcss-loader](https://github.com/postcss/postcss-loader)
   - [autoprefixer](https://github.com/postcss/autoprefixer) "Autoprefixer will use the data based on current browser popularity and property support to apply prefixes for you."
   - [stats-webpack-plugin](https://github.com/unindented/stats-webpack-plugin) get the stats of the webpack build.
