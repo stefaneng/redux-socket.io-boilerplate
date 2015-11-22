@@ -9,11 +9,11 @@ services:
   - docker
 
 before_install:
-  - docker build -t travisci/cibuild .
+  - docker build -t stefaneng/cibuild .
   - docker ps -a
   - docker run -d -p 127.0.0.1:80:3000 stefaneng/cibuild /bin/sh -c 'npm start'
 
 script:
-  - docker run stefaneng/partyq /bin/sh -c 'npm run lint'
-  - docker run stefaneng/partyq /bin/sh -c 'npm test'
+  - docker run stefaneng/cibuild /bin/sh -c 'npm run lint'
+  - docker run stefaneng/cibuild /bin/sh -c 'npm test'
   - curl -i localhost
