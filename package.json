@@ -2,11 +2,11 @@
   "name": "redux-socket.io-boilerplate",
   "version": "0.0.0",
   "description": "redux-socket.io-boilerplate",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "start": "babel-node ./src/index.js",
-    "test:server": "mocha --compilers js:babel/register --recursive 'server/test/**/*.@(js|jsx)'",
-    "test:client": "mocha --compilers js:babel-core/register --require ./app/test/test_helper.js --recursive 'app/test/**/*.@(js|jsx)'",
+    "test:server": "mocha --compilers js:babel/register --recursive './src/server/test/**/*.@(js|jsx)'",
+    "test:client": "mocha --compilers js:babel-core/register --require ./src/app/test/test_helper.js --recursive './src/app/test/**/*.@(js|jsx)'",
     "test": "npm run test:server && npm run test:client",
     "test:server-watch": "npm run test:server -- --watch",
     "test:client-watch": "npm run test:client -- --watch",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CSUN-Comp490/partyq.git"
+    "url": "git+https://github.com/stefaneng/redux-socket.io-boilerplate.git"
   },
   "keywords": [
     "partyq"
@@ -28,9 +28,9 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CSUN-Comp490/redux-socket.io-boilerplate/issues"
+    "url": "https://github.com/stefaneng/redux-socket.io-boilerplate/issues"
   },
-  "homepage": "https://github.com/CSUN-Comp490/redux-socket.io-boilerplate#readme",
+  "homepage": "https://github.com/stefaneng/redux-socket.io-boilerplate#readme",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel": "^5.8.29",
