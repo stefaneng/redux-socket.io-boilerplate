@@ -18,7 +18,7 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <p>
+      <footer className="info">
         Show:
         {' '}
         {this.renderFilter('SHOW_ALL', 'All')}
@@ -27,7 +27,7 @@ export default class Footer extends Component {
         {', '}
         {this.renderFilter('SHOW_ACTIVE', 'Active')}
         .
-      </p>
+      </footer>
     )
   }
 }

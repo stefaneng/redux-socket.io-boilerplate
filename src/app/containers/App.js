@@ -5,6 +5,10 @@ import AddTodo from '../components/AddTodo'
 import TodoList from '../components/TodoList'
 import Footer from '../components/Footer'
 
+// todo-mvc css
+import 'todomvc-app-css/index.css'
+import 'todomvc-common/base.css'
+
 class App extends Component {
   render() {
     // Injected by connect() call:
