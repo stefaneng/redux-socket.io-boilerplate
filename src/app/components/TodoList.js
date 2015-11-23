@@ -4,8 +4,8 @@ import Todo from './Todo'
 export default class TodoList extends Component {
   render() {
     return (
-      <section className="main">
-        <ul className="todo-list">
+      <section className='main'>
+        <ul className='todo-list'>
           {this.props.todos.map((todo, index) =>
             <Todo {...todo}
                   key={index}
