@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './containers/App.js'
+import App from './containers/App.jsx'
 import io from 'socket.io-client'
 import reducer from './reducer'
 import { createStore, applyMiddleware } from 'redux'
